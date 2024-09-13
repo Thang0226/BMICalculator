@@ -4,17 +4,20 @@ function calculate() {
     let h = + document.getElementById("height").value;
 
     let bmi = w / h**2
+    let state = ""
 
     if (bmi < 18) {
-        document.write("Underweight");
+        state = "Underweight";
     }
     else if (bmi < 25.0) {
-        document.write("Normal");
+        state = "Normal";
     }
     else if (bmi < 30.0) {
-        document.write("Overweight");
+        state = "Overweight";
     }
     else {
-        document.write("Obese");
+        state = "Obese";
     }
+
+    document.getElementById("result").innerHTML = state
 }
