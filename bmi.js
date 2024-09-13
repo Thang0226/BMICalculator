@@ -1,5 +1,5 @@
-let w = + prompt('Input your weight (kg):', 0)
-let h = + prompt('Input your height (m):', 0)
+let w = + document.getElementById("weight").value; 
+let h = + document.getElementById("height").value;
 
 let bmi = w / h**2
 
